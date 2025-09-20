@@ -1,0 +1,9 @@
+flask
+sqlalchemy
+twilio
+python-dotenv
+streamlit
+pandas
+plotly
+streamlit-autorefresh
+requests
