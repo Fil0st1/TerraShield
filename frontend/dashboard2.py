@@ -6,7 +6,7 @@ from streamlit_autorefresh import st_autorefresh
 from streamlit_folium import st_folium
 import folium
 
-st_autorefresh(interval=60000, key="datarefresh")
+st_autorefresh(interval=10000, key="datarefresh")
 
 st.set_page_config(
     page_title="TerraShield",
@@ -152,7 +152,7 @@ try:
                 risk_desc = "Elevated sensor readings"
                 bg_color = "#ffa502"; text_color = "#ffffff"; border_color = "#ff9500"
                 icon = "⚠️"
-            elif latest_vibration > 5:
+            elif latest_vibration > 1000:
                 risk_level = "WARNING"
                 risk_desc = "High vibration detected"
                 bg_color = "#ffa502"; text_color = "#ffffff"; border_color = "#ff9500"
@@ -278,7 +278,7 @@ try:
         
         with metric_col1:
             latest_moisture = df_latest["moisture"].iloc[0] if "moisture" in df_latest.columns and not df_latest.empty else 0
-            st.metric("💧 Moisture", f"{latest_moisture:.1f}%", "Normal" if latest_moisture < 70 else "High")
+            st.metric("💧 Moisture", f"{latest_moisture:.1f}%", "Normal" if latest_moisture < 50 else "High")
         
         with metric_col2:
             latest_temp = df_latest["temperature"].iloc[0] if "temperature" in df_latest.columns and not df_latest.empty else 0

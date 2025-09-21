@@ -70,13 +70,10 @@ class SimpleLanguageChanger:
 
 Current language: **{self.current_language.title()}**
 
-Please select your preferred language:
+Please enter your preferred language:
 
-1️⃣ **English**
-2️⃣ **Hindi** (हिंदी)
-3️⃣ **Marathi** (मराठी)
 
-Type: **english**, **hindi**, or **marathi**"""
+"""
     
     def get_language_confirmation_message(self, language):
         """Get language confirmation message"""
