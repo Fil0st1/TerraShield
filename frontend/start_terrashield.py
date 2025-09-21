@@ -25,7 +25,7 @@ def run_sensor_monitor():
     try:
         # Wait a bit for language selector to start
         time.sleep(5)
-        subprocess.run([sys.executable, "sensor_alert_monitor.py", "--continuous", "60"], check=True)
+        subprocess.run([sys.executable, "sensor_alert_monitor.py", "--continuous", "2"], check=True)
     except Exception as e:
         print(f"❌ Sensor monitor error: {e}")
 

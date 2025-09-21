@@ -6,7 +6,7 @@ from streamlit_autorefresh import st_autorefresh
 from streamlit_folium import st_folium
 import folium
 
-st_autorefresh(interval=10000, key="datarefresh")
+st_autorefresh(interval=5000, key="datarefresh")
 
 st.set_page_config(
     page_title="TerraShield",
@@ -286,11 +286,11 @@ try:
         
         with metric_col3:
             latest_tilt = df_latest["tilt"].iloc[0] if "tilt" in df_latest.columns and not df_latest.empty else 0
-            st.metric("📐 Tilt", f"{latest_tilt:.1f}°", "Normal" if latest_tilt < 10 else "High")
+            st.metric("📐 Tilt", f"{latest_tilt:.1f}°", "Normal" if latest_tilt < 7 else "High")
         
         with metric_col4:
             latest_vibration = df_latest["vibration"].iloc[0] if "vibration" in df_latest.columns and not df_latest.empty else 0
-            st.metric("📳 Vibration", f"{latest_vibration:.1f}g", "Normal" if latest_vibration < 5 else "High")
+            st.metric("📳 Vibration", f"{latest_vibration:.1f}g", "Normal" if latest_vibration < 1200 else "High")
 
         st.markdown("### 📍 Node Location")
 
