@@ -300,7 +300,7 @@ For support and questions:
 
 **Made with ❤️ for landslide prevention and community safety**
 
-[![GitHub stars](https://img.shields.io/github/stars/fil0st/terrashield?style=social)](https://github.com/fil0st/terrashield)
-[![GitHub forks](https://img.shields.io/github/forks/fil0st/terrashield?style=social)](https://github.com/fil0st/terrashield)
+[![GitHub stars](https://img.shields.io/github/stars/fil0st1/terrashield?style=social)](https://github.com/fil0st1/terrashield)
+[![GitHub forks](https://img.shields.io/github/forks/fil0st1/terrashield?style=social)](https://github.com/fil0st1/terrashield)
 
 </div>
